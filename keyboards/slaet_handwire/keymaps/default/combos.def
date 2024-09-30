@@ -1,0 +1,12 @@
+// Alternate reference layers by layer
+//               Layer     Reference layer
+COMBO_REF_LAYER(_DVORAK, _QWERTY)  // reference the qwerty layer for dvorak.
+COMBO_REF_LAYER(_NAV, _NAV) // explicit reference to self instead of the default.
+
+//   name     result    chord keys
+COMB(AB_ESC,   KC_ESC,   KC_A, KC_B)
+COMB(JK_TAB,   KC_TAB,   KC_J, KC_K)
+COMB(JKL_SPC,  KC_SPC,   KC_J, KC_K, KC_L)
+COMB(BSSL_CLR, KC_NO,    KC_BSPC, KC_LSFT) // using KC_NO as the resulting keycode is the same as COMBO_ACTION before.
+COMB(QW_UNDO,  C(KC_Z),  KC_Q, KC_W)
+SUBS(TH_THE,   "the",    KC_T, KC_H) // SUBS uses SEND_STRING to output the given string.
