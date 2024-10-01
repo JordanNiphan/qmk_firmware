@@ -5,4 +5,3 @@ DYNAMIC_MACRO_ENABLE = yes
 TAP_DANCE_ENABLE = yes
 SPACE_CADET_ENABLE = no
 COMBO_ENABLE = yes
-VPATH += keyboards/gboards
